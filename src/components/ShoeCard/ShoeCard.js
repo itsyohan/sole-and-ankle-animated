@@ -107,6 +107,7 @@ const SalePrice = styled.span`
 `;
 
 const Flag = styled.div`
+  display: inline-block;
   position: absolute;
   top: 12px;
   right: -4px;
@@ -140,8 +141,8 @@ const Image = styled.img`
     filter: unset;
     transition: 200ms;
   }
-  ${NewFlag} {
-    display: none;
+  $:hover ${NewFlag} {
+    transform: translateX(100%);
   }
 `;
 
